@@ -1,0 +1,22 @@
+<nz-table #basicTable [nzData]="listOfData">
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{ data.userId }}</td>
+      <td>{{ data.title }}</td>
+      <td>{{ data.body}}</td>
+      <td>
+        <a>Action 一 {{ data.userId }}</a>
+
+        <a>Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
